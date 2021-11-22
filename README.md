@@ -5,6 +5,14 @@
 
 Lancé en 2013, Docker est fondée en France par Solomon Hykes et désigne aujourd'hui une technologie permettant aux développeurs et aux administrateurs système de développer, déployer et exécuter des applications avec des conteneurs. Le principe est simple : le conteneur embarque une application avec toutes ses dépendances dans un processus isolé. Ce dernier peut-être executé sur n'importe quelle machine avec n'importe quel système d'exploitation compatible avec le moteur Docker.
 
+Il est important de différencier la virtualisation et la conteneurisation : 
+* Dans le cas de la vitualisation, l'isolation des machines virtuelles se fait au niveau matériel, on sépare les ressources comme la CPU, la RAM...
+* Dans le cas de la conteneurisation, l’isolation se fait au niveau du système d’exploitation.
+
+![Différence virtualisation et conteneurisation](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcodingthesmartway.com%2Fwp-content%2Fuploads%2F2019%2F02%2F010.png&f=1&nofb=1)
+
+Cet état de fait est la force de la technologie Docker, cela permets aux conteneurs d'être plus léger, flexible, interchangeable, portable et évolutif.
+
 ## Création d'un conteneur
 
 docker run image_name : permet de créer et démarer une nouvelle instance de l'image (conteneur)
